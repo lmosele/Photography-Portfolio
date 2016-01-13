@@ -1,0 +1,7 @@
+/* humanstxt.org */
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Frameworks: Custom Foundation 5 build, Skrollr.js
+  Components: jQuery
+  Software: Sublime, Git, Koala, Sass

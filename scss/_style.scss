@@ -1,0 +1,197 @@
+@import '_modules';
+
+body {
+	overflow-y: hidden;
+}
+
+// RIGHT HAND SECTION
+section.lifestyleContent { 
+	margin-left: 160px;
+	z-index:0;
+	width: 8500px; // individual widths for each section since width isn't dynamic
+}
+section.streetContent {
+	margin-left: 160px;
+	z-index:0;
+	width: 9300px; // individual widths for each section since width isn't dynamic
+}
+section.portraitContent {
+	margin-left: 160px;
+	z-index:0;
+	width: 12500px; // individual widths for each section since width isn't dynamic
+}
+section.content {
+	margin-left: 180px;
+	margin-top: 50px;
+	z-index:0;
+	display: inline-block
+}
+
+// Image height
+img {
+	max-height: 700px;
+	margin-top: 10px;
+	max-height: 95vh;
+	display: inline-block;
+}
+
+// Inverse fadeout photos on hover
+section:hover > a {
+	opacity: .7;
+	transition: opacity 2.5s ease-in;
+}
+section:hover > a:hover {
+	opacity: 1;
+	transition: opacity 1s ease-in;
+}
+
+// Hide slider arrows
+.slick-prev.slick-arrow,
+.slick-next.slick-arrow {
+	display: none !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 150px;
+  height: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C72C49;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+body {
+  scrollbar-face-color: #C72C49;
+  scrollbar-track-color: #fff;
+}
+
+// MEDIA QUERIES
+@media only screen and (min-width: $breakxlarge) {
+	// img {
+	// 	height: 1200px;
+	// 	margin-top: 20px;
+	// }
+}
+@media only screen and (max-width: $breaklarge) {
+
+}
+@media only screen and (max-width: $breaklarge) {
+}
+@media only screen and (max-width: $breaktiny) {
+	section {
+		margin-left: 0px;
+		padding-top: 130px;
+		width: 100%;
+	}
+		section.lifestyleContent { 
+		margin-left: 0px;
+		padding-top: 130px;
+		width: 100%;
+	}
+	section.streetContent {
+		margin-left: 0px;
+		padding-top: 130px;
+		width: 100%;
+	}
+	section.portraitContent {
+		margin-left: 0px;
+		padding-top: 130px;
+		width: 100%;
+	}
+		img {
+		margin-top: 20px;
+		max-width: 100%;
+		
+	}
+	body {
+		overflow-y: scroll;
+	}
+	::-webkit-scrollbar {
+	  width: 10px;
+	  height: 1em;
+	}
+
+	::-webkit-scrollbar-thumb {
+	  background: #C72C49;
+	}
+
+	::-webkit-scrollbar-track {
+	  background: #fff;
+	}
+
+	body {
+	  scrollbar-face-color: #C72C49;
+	  scrollbar-track-color: #fff;
+	}
+
+}
+@media only screen and (max-width: $breaktiny) {
+
+}
+
+
+
+
+// HOVEREABLE TILES
+	// .title {
+	// 	font-family: 'Tiempos', serif;
+	// 	text-align: center;
+	// 	color: white;
+	// 	opacity: 0;
+	// 	position: relative;
+	// 	top: 40%;
+	// 	transform:translateY(500%);
+	// 	transition: opacity 1s ease;
+	// 	transition: transform 2s ease;
+	// }
+	// div:hover > .title {
+	// 	transform:translateY(0%);
+	// 	opacity: 1;
+	// 	transition: opacity 1s ease;
+	// 	transition: transform 2s ease;
+	// }
+	// // FADE ALL OTHERS ON HOVER
+	// section.content:hover > div {
+	// 	opacity: .5;
+	// 	transition: opacity 1s ease;
+	// }
+	// section.content:hover > div:hover {
+	// 	opacity: 1;
+	// 	transition: opacity 1s ease;
+	// 	cursor: pointer;
+	// }
+	//  // TILE IMAGES
+	// div.template {
+	// 	background-position: 50% 50%;
+	// 	float: left;
+	// 	width: 33%;
+	// 	height: 100vh;
+	// 	background-color: #333;
+	// }
+	// div.portrait {
+	// 	@extend div.template;
+	// 	background: url(https://images.unsplash.com/photo-1439902315629-cd882022cea0?q=80&fm=jpg&s=be415d11b61182f92a9db90dbdfb18c8);
+	// 	background-size: cover;
+	// 	background-position: 50% 50%;
+	// 	background-color: #333;
+	// }
+	// div.lifestyle {
+	// 	@extend div.template;
+	// 	background: url(https://images.unsplash.com/photo-1439853949127-fa647821eba0?q=80&fm=jpg&s=3d92a317dfc68eb6ae5ded1986890762);
+	// 	background-size: cover;
+	// 	background-color: #333;
+	// }
+	// div.street {
+	// 	@extend div.template;
+	// 	background: url(https://images.unsplash.com/photo-1431538510849-b719825bf08b?q=80&fm=jpg&s=6fd7a983e3b43e66d2b6062856b9df66);
+	// 	background-size: cover;
+	// 	background-color: #333;
+	// }
+
+
+

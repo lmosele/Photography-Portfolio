@@ -1,0 +1,118 @@
+@import '_modules';
+
+h1.logo {
+    background-image: url(../img/src/logo.png);
+    height: 100px;
+    background-size: 100% 100%;
+    margin-top: 30px;
+    transition: background-image 1.5s ease-out;
+}
+h1.logo:hover {
+    background-image: url(../img/src/logo2.png);
+    transition: background-image 1.5s ease-in;
+    cursor: pointer;
+}
+
+
+.topNav {
+    position: fixed;
+    z-index: 100;
+    display: none;
+    height: 140px;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #C72C49;
+    background-color: white;
+    .logo {
+        width: 80px;
+        height: 50px;
+        font-size: 0em;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        max-width: 360px;
+    }
+    .filters {
+        text-align: center;
+    }
+    .filters a {
+        display: inline-block;
+        padding: 17px;
+        border-bottom: 3px solid transparent;
+        color: #333;
+    }
+    .filters a:hover {
+        border-bottom: 3px solid #C72C49;
+        font-weight: bold;
+        color: #C72C49;
+    }
+}
+
+nav.sideBar {
+	display: inline-block;
+	float: left;
+	position: fixed;
+    height: 100%;
+    width: 150px;
+    background-color: rgba(255,255,255,.9);
+    // border-right: 1px solid #333;
+    z-index:1;
+    box-shadow: 5px 5px 50px 0px rgba(0,0,0,0.3);
+    .header h1 {
+    	font-size: 1.1em;
+    	font-family: Tiempos, serif;
+    	text-align: center;
+    	padding-top: 30px;
+    	padding-bottom: 10px;
+    }
+    .header h1 {
+        font-size: 0;
+    }
+    .header h2 {
+    	font-size: .9em;
+    	color: #777;
+    	font-family: Tiempos, serif;
+    	text-align: center;
+    	font-style: italic;
+    }
+    .filters {
+    	margin-top: 60px;
+    }
+	.filters a {
+			display: block;
+			color: #333;
+			// border-bottom: 1px solid #333;
+			font-size: 1.0em;
+			color: #333;
+		    height:50px;
+		    width:200px;
+		    line-height: 50px;
+		    outline: none;
+		    width: 100%;
+			text-decoration: none;
+			text-align: center;
+		}
+	.filters a:first-child {
+		// border-top: 1px solid #333;
+	}
+    .filters a:hover {
+            color: #C72C49;
+            border-left: 5px solid #C72C49;
+            transition: padding-left .1s ease-in;
+        }
+    .filters a:active {
+            padding-left: 5px;
+            transition: padding-left .2s ease-out;
+        }
+}
+
+
+
+@media only screen and (max-width: $breaktiny) {
+    .topNav {
+        display: block;
+    }
+    nav.sideBar {
+        display: none;
+    }
+}

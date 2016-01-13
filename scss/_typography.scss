@@ -1,0 +1,103 @@
+@import '_modules';
+
+// USER AGENT STUFF
+body {
+	font-family: "Open Sans", sans-serif !important;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.375em;
+	text-rendering: optimizeLegibility;
+}
+
+*:focus {outline: none;}
+
+i {
+  margin-right: 10px;
+  font-size: 1em;
+}
+
+div,
+p,
+img {
+  /* Warning: Needed for oldIE support, but words are broken up letter-by-letter */
+  -ms-word-break: break-all;
+  word-break: break-all;
+  /* Non standard for webkit */
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+em {
+  font-weight: 400px;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.05em;
+  margin: 0;
+  margin-top: .25em;
+}
+h2 {
+  font-size: 2.25em;
+  line-height: 1.25em;
+  margin: 0;
+  margin-top: .25em;
+  background: none;
+}
+h3 {
+  font-size: 1.75em;
+  line-height: 1.25em;
+  margin: 0;
+  margin-top: .25em;
+}
+h4 {
+  font-size: 1.125em;
+  line-height: 1.2222222em;
+  margin: 0;
+  margin-top: .25em;
+}
+h5 {
+}
+@media only screen and (max-width: $breakmobile) {
+  body {
+    line-height: 1.25em;
+  }
+  h1 {
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+  h2 {
+    font-size: 1.625em;
+    line-height: 1.15384615em;
+  }
+  h3 {
+    font-size: 1.375em;
+    line-height: 1.13636364em;
+  }
+  h4 {
+    font-size: 1.125em;
+    line-height: 1.11111111;
+  }
+  h5 {
+  font-size: 1.020em;
+  line-height: 1.09em;
+  }
+}
+p {
+	font-family: inherit;
+	font-size: 1em;
+  font-weight: 400;
+  line-height: 1.375em;
+	margin-bottom: 1.11111rem;
+  margin-top: 1.11111rem;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  line-height: inherit;
+  text-decoration: none;
+}
