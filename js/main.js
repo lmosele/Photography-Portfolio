@@ -1,16 +1,5 @@
 
 
-
-
-// Translates downwards scroll to rightwards scroll
-// $(document).ready(function() {
-//     $('html, body, *').mousewheel(function(e, delta) {
-//         this.scrollLeft -= (delta * -0.5);
-//         e.preventDefault();
-//     });
-// });
-
-
 var viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
 if (viewportWidth > 480) {
@@ -38,28 +27,3 @@ $('a').click(function(){
     }, 800);
     return false;
 });
-
-
-// $(document).ready(function(){
-//   $("#portraitFilter").click(function(){
-//     $("#wrapper").load('../module/_portraits.php');
-//   });
-// });
-
-// $( document ).ready(function() {
-//     $("")
-// });
-
-// $( "#portraitFilter" ).click(function() {
-//   $('.content > img').show().filter(':not(#life)').hide();
-// });
-
-// $( "#lifeFilter" ).click(function() {
-//   $("div").not("#life").hide();
-//   $("#life").show();
-// });
-
-// $( "#lifeFilter" ).click(function() {
-//   $("div").not("#life").hide();
-//   $("#life").show();
-// });
